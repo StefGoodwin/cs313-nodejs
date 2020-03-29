@@ -12,8 +12,8 @@ function stateSelect() {
         var states = data[i];
         var result = $("#ulStates");
         result.empty();
-        result.append("<li>" + "State: " + states.state_name + "</li>" + "<li>" + "Capital: " + 
-        states.capital + "</li>" + "<li>" + "Flower: " + states.flower + "</li>" + "<li>" + 
+        result.append("<h3>" + "State Info:" + "</h3>" + "<li>" + "State: " + states.state_name + "</li>" + "<li>" + "Capital: " +
+        states.capital + "</li>" + "<li>" + "Flower: " + states.flower + "</li>" + "<li>" +
         "Population: " + states.population + "</li>");
 
 

@@ -13,22 +13,14 @@ function stateSelect(req, res){
       res.status(200).json(results);
 
     }
-    
+
 
   });
 
-  // var topic = req.query.topic;
-  // scriptureModel.searchByTopic(topic, function(error, results) {
-  //   res.json(results);
-  // });
+function getFact(req, res) {
+
 
 }
-
-// function getStateList(req, res) {
-//   stateModel.getAllStates(function(error, results) {
-//     res.json(results);
-//   });
-// }
 
 module.exports = {
   stateSelect: stateSelect,
