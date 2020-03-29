@@ -17,14 +17,11 @@ function stateSelect(req, res){
 
   });
 
-function getFact(req, res) {
-
-
 }
 
 module.exports = {
-  stateSelect: stateSelect,
+  stateSelect: stateSelect
 //  getState: getState,
  // getStateList: getStateList
 
-}
+};

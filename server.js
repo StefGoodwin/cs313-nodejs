@@ -2,6 +2,7 @@ const express = require("express");
 const path = require('path');
 
 const stateController = require("./controllers/stateController");
+//const factController = require("./controllers/factController");
 
 const PORT = process.env.PORT || 5000;
 
@@ -20,6 +21,7 @@ app.use(express.urlencoded({extended: true}));  //support url encoded bodies
 // });
 
 app.get("/getState", stateController.stateSelect);
+//app.post("/insertUser", factController.insertUser);
 
 app.listen(PORT, function() {
   console.log("Server listening on port " + PORT);
