@@ -21,7 +21,5 @@ function stateSelect(req, res){
 
 module.exports = {
   stateSelect: stateSelect
-//  getState: getState,
- // getStateList: getStateList
 
 };

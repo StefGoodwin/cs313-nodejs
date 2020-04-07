@@ -17,7 +17,8 @@ CREATE TABLE states (
 CREATE TABLE fun_facts (
 	id SERIAL PRIMARY KEY NOT NULL,
 	user_id INT NOT NULL REFERENCES users(id),
-	facts TEXT NULL 
+  state_id INT NOT NULL REFERENCES states(id),
+	facts TEXT NULL
 );
 
 CREATE USER stateuser WITH PASSWORD 'user1';
@@ -39,7 +40,7 @@ INSERT INTO states(state_name, capital, flower, population) VALUES ('California'
 
 INSERT INTO states(state_name, capital, flower, population) VALUES ('Colorado', 'Denver', 'Rocky Mountain Columbine', '5758736');
 
-INSERT INTO states(state_name, capital, flower, population) VALUES ('Conneticut', 'Hartford', 'Mountain Laurel', '3565287');
+INSERT INTO states(state_name, capital, flower, population) VALUES ('Connecticut', 'Hartford', 'Mountain Laurel', '3565287');
 
 INSERT INTO states(state_name, capital, flower, population) VALUES ('Delaware', 'Dover', 'Peach Blossom', '973764');
 
@@ -126,3 +127,5 @@ INSERT INTO states(state_name, capital, flower, population) VALUES ('West Virgin
 INSERT INTO states(state_name, capital, flower, population) VALUES ('Wisconsin', 'Madison', 'Wood Violet', '5822434');
 
 INSERT INTO states(state_name, capital, flower, population) VALUES ('Wyoming', 'Cheyenne', 'Indian Paintbrush', '578759');
+
+--DROP TABLE states;

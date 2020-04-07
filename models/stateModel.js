@@ -1,6 +1,6 @@
 const { Pool } = require("pg");
 
-const connectionString = process.env.DATABASE_URL || "postgres://stateuser:user1@localhost:5432/stateinfo";
+const connectionString = process.env.DATABASE_URL;
 const pool = new Pool({connectionString: connectionString});
 
 
@@ -26,5 +26,5 @@ function getState(state_id, callback) {
 
 module.exports = {
   getState: getState
-  
+
 };
